@@ -6,6 +6,16 @@
     .map(a => document.querySelector(a.getAttribute("href")))
     .filter(Boolean);
 
+  // Placeholder inquiry form: prevent page reload until a backend is wired up.
+  const inquiryForm = document.querySelector("form.inquiry");
+  if (inquiryForm) {
+    inquiryForm.addEventListener("submit", (e) => {
+      e.preventDefault();
+      const micro = inquiryForm.querySelector(".micro");
+      if (micro) micro.textContent = "Thanks! Your inquiry is ready to send once the form is connected.";
+    });
+  }
+
   document.addEventListener("click", (e) => {
     const a = e.target.closest('a[href^="#"]');
     if (!a) return;

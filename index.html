@@ -9,45 +9,88 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css?v=20260109a" />
   <script defer src="script.js"></script>
 </head>
 
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
   <!-- NAV -->
   <header class="topbar">
-    <a class="brand" href="index.html" aria-label="Ni-Trio Lanka Travels Home">
-      <div class = "brand-logo-header">
-        <img src="assets/srilanka_green.png" alt="Ni-Trio Lanka Travels logo" />
-      </div>
-    
-    </a>
+    <div class="topbar-inner container">
+      <a class="brand" href="index.html" aria-label="Ni-Trio Lanka Travels Home">
+        <img class="brand-logo" src="assets/srilanka_green.png" alt="Ni-Trio Lanka Travels logo" />
+        <span class="brand-text">
+          <span>Ni-Trio Lanka Travels</span>
+          <span>Private tours &amp; local guides</span>
+        </span>
+      </a>
 
-    <nav class="nav" aria-label="Primary">
-      <a class="nav-link active" href="#home">Home</a>
-      <a class="nav-link" href="#inquiry">Inquiry</a>
-      <a class="nav-link" href="#about">About Us</a>
-      <a class="nav-link" href="#contact">Contact</a>
-    </nav>
+      <nav class="nav" aria-label="Primary" id="primary-nav">
+        <a class="nav-link active" href="#home">Home</a>
+        <a class="nav-link" href="#inquiry">Inquiry</a>
+        <a class="nav-link" href="#about">About Us</a>
+        <a class="nav-link" href="#contact">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <!-- HERO -->
-  <section id="home" class="hero">
-    <div class="hero-inner">
-      <div class="hero-left">
-        <h1 class="hero-title">
-          Explore Sri Lanka with<br />
-          Comfort &amp; Confidence
-        </h1>
-        <p class="hero-sub">Tailored travel experiences across Sri Lanka.</p>
-        <a class="btn" href="#inquiry">Make an Inquiry</a>
-      </div>
+  <main id="main">
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="hero-inner container">
+        <div class="hero-left">
+          <p class="eyebrow">Sri Lanka • Private tours • Door-to-door</p>
+          <h1 class="hero-title">
+            Explore Sri Lanka with<br />
+            Comfort &amp; Confidence
+          </h1>
+          <p class="hero-sub">
+            Tailored travel experiences with a local team you can rely on—comfortable vehicles, flexible
+            itineraries, and genuine Sri Lankan hospitality.
+          </p>
 
-      <div class="hero-right" aria-hidden="true">
-        
+          <div class="hero-actions">
+            <a class="btn" href="#inquiry">Make an Inquiry</a>
+            <a class="btn btn-ghost" href="#tours">View sample tours</a>
+          </div>
+
+          <ul class="trust" aria-label="Key benefits">
+            <li>Modern, spacious vehicles</li>
+            <li>Custom itineraries</li>
+            <li>Local expertise</li>
+          </ul>
+        </div>
+
+        <div class="hero-right">
+          <div class="hero-card" role="region" aria-label="Quick trip snapshot">
+            <div class="hero-card-top">
+              <h2>Popular starting point</h2>
+              <p>Colombo → Cultural Triangle → Kandy → Hill Country</p>
+            </div>
+            <div class="hero-card-grid" aria-label="Trip highlights">
+              <div class="stat">
+                <div class="stat-k">3–10</div>
+                <div class="stat-l">Days</div>
+              </div>
+              <div class="stat">
+                <div class="stat-k">1–6</div>
+                <div class="stat-l">Guests</div>
+              </div>
+              <div class="stat">
+                <div class="stat-k">100%</div>
+                <div class="stat-l">Private</div>
+              </div>
+            </div>
+            <div class="hero-card-bottom">
+              <a class="btn btn-small" href="#inquiry">Get a quote</a>
+              <p class="micro">Tell us your dates and interests—reply within 24 hours.</p>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
   <!-- WHAT WE OFFER -->
   <section class="offers">
@@ -101,6 +144,55 @@
     </div>
   </section>
 
+  <!-- SAMPLE TOURS -->
+  <section id="tours" class="tours">
+    <div class="container">
+      <h2 class="section-title">Sample Tours</h2>
+      <p class="section-sub">
+        A few popular options to inspire your itinerary. Every tour is customised to your pace, interests,
+        and comfort.
+      </p>
+
+      <div class="tour-grid">
+        <article class="tour-card">
+          <div class="tour-card-head">
+            <h3>Cultural Triangle</h3>
+            <p>Sigiriya • Dambulla • Polonnaruwa</p>
+          </div>
+          <ul class="tour-points">
+            <li>Sunrise viewpoints &amp; temples</li>
+            <li>Easy pacing or adventure add-ons</li>
+            <li>Great for first-time visitors</li>
+          </ul>
+        </article>
+
+        <article class="tour-card">
+          <div class="tour-card-head">
+            <h3>Hill Country Escape</h3>
+            <p>Kandy • Nuwara Eliya • Ella</p>
+          </div>
+          <ul class="tour-points">
+            <li>Tea country scenery</li>
+            <li>Waterfalls &amp; cool climate</li>
+            <li>Iconic train route support</li>
+          </ul>
+        </article>
+
+        <article class="tour-card">
+          <div class="tour-card-head">
+            <h3>South Coast Relax</h3>
+            <p>Galle • Unawatuna • Mirissa</p>
+          </div>
+          <ul class="tour-points">
+            <li>Beach days + food stops</li>
+            <li>Fort &amp; coastal viewpoints</li>
+            <li>Optional whale watching</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
   <!-- WHY CHOOSE -->
   <section id="about" class="why">
     <div class="container why-grid">
@@ -111,10 +203,39 @@
           From <strong>short tours</strong> to complete journeys, we take care of the <strong>details</strong>
           so you can enjoy the destination.
         </p>
+
+        <div class="pill-row" aria-label="Service highlights">
+          <span class="pill">Airport pickups</span>
+          <span class="pill">Family-friendly</span>
+          <span class="pill">Flexible timing</span>
+          <span class="pill">Local recommendations</span>
+        </div>
       </div>
 
-      <div class="why-box" aria-hidden="true">
-        
+      <div class="why-box" role="region" aria-label="How it works">
+        <ol class="steps">
+          <li>
+            <span class="step-n">1</span>
+            <div>
+              <h3>Tell us your dates</h3>
+              <p>Share your travel window, group size, and interests.</p>
+            </div>
+          </li>
+          <li>
+            <span class="step-n">2</span>
+            <div>
+              <h3>We build an itinerary</h3>
+              <p>Comfortable pacing with clear travel times and options.</p>
+            </div>
+          </li>
+          <li>
+            <span class="step-n">3</span>
+            <div>
+              <h3>You enjoy Sri Lanka</h3>
+              <p>We handle the details while you focus on the experience.</p>
+            </div>
+          </li>
+        </ol>
       </div>
     </div>
   </section>
@@ -122,34 +243,68 @@
   <!-- CTA -->
   <section id="inquiry" class="cta">
     <div class="container">
-      <h2>Ready to plan your journey?</h2>
-      <a class="btn" href="#contact">Send an Inquiry</a>
+      <div class="cta-grid">
+        <div>
+          <h2>Ready to plan your journey?</h2>
+          <p class="cta-sub">
+            Send a quick inquiry and we’ll reply with a suggested itinerary and quote.
+          </p>
+          <div class="cta-points" aria-label="Inquiry notes">
+            <div class="cta-point"><strong>Fast reply:</strong> usually within 24 hours</div>
+            <div class="cta-point"><strong>Tailored:</strong> built around your interests</div>
+            <div class="cta-point"><strong>Comfort:</strong> private vehicle options</div>
+          </div>
+        </div>
+
+        <form class="inquiry" action="#" method="post" aria-label="Inquiry form">
+          <label>
+            <span>Name</span>
+            <input name="name" autocomplete="name" required />
+          </label>
+          <label>
+            <span>Email</span>
+            <input name="email" type="email" autocomplete="email" required />
+          </label>
+          <label>
+            <span>Travel dates (optional)</span>
+            <input name="dates" autocomplete="off" placeholder="e.g., 10–18 March" />
+          </label>
+          <label>
+            <span>Message</span>
+            <textarea name="message" rows="4" placeholder="Tell us your group size + what you want to see" required></textarea>
+          </label>
+          <button class="btn" type="submit">Send inquiry</button>
+          <p class="micro">Form submission is a placeholder (no backend yet).</p>
+        </form>
+      </div>
     </div>
   </section>
 
   <!-- FOOTER -->
   <footer id="contact" class="footer">
-
     <div class="container footer-top">
+      <a class="footer-logo-link" href="#home" aria-label="Back to top">
+        <img src="assets/srilanka_green.png" alt="Ni-Trio Lanka Travels logo" class="brand-logo-footer" />
+      </a>
 
-        <div class = "footer-logo">
-            <img src="assets/srilanka_green.png" alt="Ni-Trio Lanka Travels logo" class = "brand-logo-footer" />
-            
-        </div>
-     
-      <div class="footer-links">
+      <div class="footer-meta">
+        <p class="footer-title">Ni-Trio Lanka Travels</p>
+        <p class="footer-sub">Tour guides &amp; private drivers across Sri Lanka</p>
+      </div>
+
+      <div class="footer-links" aria-label="Footer links">
         <a href="#home">Home</a> <span>|</span>
+        <a href="#tours">Tours</a> <span>|</span>
         <a href="#inquiry">Inquiry</a> <span>|</span>
-        <a href="#about">About Us</a> <span>|</span>
-        <a href="#contact">Contact</a> <span>|</span>
-        <a href="#contact">Email</a> <span>|</span>
-        <a href="#contact">Phone</a>
+        <a href="#about">About</a>
+      </div>
     </div>
-    </footerdiv>
 
-        <div class="footer-bottom">
-      © Ni-Trio Lanka Travels, All rights reserved.
-        </div>
+    <div class="container footer-bottom">
+      <span>© Ni-Trio Lanka Travels, All rights reserved.</span>
+    </div>
   </footer>
+
+  </main>
 </body>
 </html>
